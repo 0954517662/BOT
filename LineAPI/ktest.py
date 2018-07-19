@@ -1,10 +1,10 @@
-# YUKIESTREETBOT
-# KHIE WAS HERE
-from LineAPI.linepy import *
-from LineAPI.akad.ttypes import Message
-from LineAPI.akad.ttypes import ContentType as Type
-from LineAPI.akad.ttypes import ChatRoomAnnouncementContents
-from LineAPI.akad.ttypes import ChatRoomAnnouncement
+# REMAKEBOT
+# BOT SC HERE
+from linepy import *
+from akad.ttypes import Message
+from akad.ttypes import ContentType as Type
+from akad.ttypes import ChatRoomAnnouncementContents
+from akad.ttypes import ChatRoomAnnouncement
 from datetime import datetime, timedelta
 from time import sleep
 from bs4 import BeautifulSoup
@@ -16,7 +16,7 @@ from googletrans import Translator
 #==============================================================================================================
 botStart = time.time()
 #==============================================================================================================
-client = LINE ("EuUDOUgIh32Jz9q8q0H5.AlX52OlquZ/xf9hszTyZnq.npLxBS1S2d6nKfwSAW3ddirkoofbyTgxLGfo2GM/J/g=")
+client = LINE ('EupMrXWRpSNOiVdwFYQ9.5AVps4LgVf5meZavAc5SEq.K/Qs3oAFtWM0ECld/7olml5QwhCvtVXU3WPZpwxnc9Y=')
 #==============================================================================================================
 readOpen = codecs.open("read.json","r","utf-8")
 settingsOpen = codecs.open("temp.json","r","utf-8")
@@ -33,9 +33,9 @@ clientSettings = client.getSettings()
 #==============================================================================================================
 clientPoll = OEPoll(client)
 #==============================================================================================================
-admin = "u68bc79da82d0533f9717d1d266d63335"
-owner = "u68bc79da82d0533f9717d1d266d63335"
-Bots=[mid,"u68bc79da82d0533f9717d1d266d63335"]
+admin = "u9f478c580a9c4e1de5e407e9b10c2da1"
+owner = "u9f478c580a9c4e1de5e407e9b10c2da1"
+Bots=[mid,"u9f478c580a9c4e1de5e407e9b10c2da1"]
 #==============================================================================================================
 #==============================================================================================================
 contact = client.getProfile()
@@ -82,7 +82,7 @@ settings = json.load(settingsOpen)
 #images = json.load(imagesOpen)
 stickers = json.load(stickersOpen)
 msg_dict = {}
-bl = ["ufc6d985e53fcf4ae5436354406ce408c"]
+bl = ["u31d8aba9dff04c75242f2a2097b8adae"]
 
 try:
     with open("Log_data.json","r",encoding="utf_8_sig") as f:
@@ -208,7 +208,7 @@ def command(text):
         cmd = "Undefined command"
     return cmd
 #==============================================================================================================
-helpmsg ="""YUKIE STREET BOTS
+helpmsg ="""INI BOTS
 
 Me
 Mymid
@@ -395,7 +395,7 @@ Addwelcomesticker
 Delwelcomesticker
 Setwelcomemsg:「text」
 
-HAPPY FUCKIN DAY \m/"""
+HAPPY GOOD DAY CAPUCCINO \m/"""
 helpmusic ="""「 Music 」
 
 • Key:  Music「query」
