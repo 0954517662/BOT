@@ -5,12 +5,13 @@
     "autoLeave": false,
     "autoRead": false,
     "blacklist": {
-        "uf6b0fecdf26459e6a48b5a387c1144d2": true
+        "u31d8aba9dff04c75242f2a2097b8adae": true
     },
     "canceljoin": false,
     "cancelprotect": false,
     "changeGroupPicture": {},
     "changePicture": {},
+    "changeProvileVideo": {},
     "checkSticker": false,
     "dblack": false,
     "dblacklist": false,
