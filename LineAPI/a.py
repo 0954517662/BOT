@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from LineAPI.linepy import *
-from LineAPI.akad.ttypes import Message
-from LineAPI.akad.ttypes import ContentType as Type
+from linepy import *
+from akad.ttypes import Message
+from akad.ttypes import ContentType as Type
 from gtts import gTTS
 from time import sleep
 from datetime import datetime, timedelta
@@ -19,10 +19,10 @@ ririnProfile = cl.getProfile()
 ririnSettings = cl.getSettings()
 ririnPoll = OEPoll(cl)
 call = LineCall(cl)
-creator = ["ue4341206714a63166f6540501005a5d9"]
-owner = ["ue4341206714a63166f6540501005a5d9"]
-admin = ["ue4341206714a63166f6540501005a5d9"]
-staff = ["ue4341206714a63166f6540501005a5d9"]
+creator = ["u9f478c580a9c4e1de5e407e9b10c2da1"]
+owner = ["u9f478c580a9c4e1de5e407e9b10c2da1"]
+admin = ["u9f478c580a9c4e1de5e407e9b10c2da1"]
+staff = ["u9f478c580a9c4e1de5e407e9b10c2da1"]
 KAC = [cl]
 #ABC = [ki,kk,kc,km,kb]
 Bots = [mid]
@@ -104,8 +104,8 @@ wait = {
     "Respontag":"GIFT NIH BUAT LU",
     "welcome":"Welcome kk .......",
     "leave":"See you next againt later",
-    "comment":"Super Like by : Apk Team Bots",
-    "message":"Ready Radiibots Protection \nProteCT your Groups",
+    "comment":"Super Like by : Apk Jem Bots",
+    "message":"Ready Jembots Protection \nProteCT your Groups",
     "myProfile": {
         "displayName": "",
         "coverId": "",
