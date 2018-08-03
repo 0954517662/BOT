@@ -1,1 +1,10 @@
-# BOT
+# only SELFBOT LINE PYTHON3
+
+📢
+📢
+📢
+📢
+📢
+📢
+
+# SEMUA AKAN MATI PADA WAKTUNYA
