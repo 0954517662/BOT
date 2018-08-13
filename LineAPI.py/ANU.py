@@ -34,9 +34,9 @@ clientSettings = client.getSettings()
 #==============================================================================================================
 clientPoll = OEPoll(client)
 #==============================================================================================================
-admin = "u9f478c580a9c4e1de5e407e9b10c2da1"
-owner = "u9f478c580a9c4e1de5e407e9b10c2da1"
-Bots=[mid,"u9f478c580a9c4e1de5e407e9b10c2da1"]
+admin = "ub0ff92e9820f6b82a2f0b81d6758c2fb"
+owner = "ub0ff92e9820f6b82a2f0b81d6758c2fb"
+Bots = [mid,"ub0ff92e9820f6b82a2f0b81d6758c2fb"]
 #==============================================================================================================
 #==============================================================================================================
 contact = client.getProfile()
@@ -209,192 +209,192 @@ def command(text):
         cmd = "Undefined command"
     return cmd
 #==============================================================================================================
-helpmsg ="""INI BOTS
+helpmsg ="""🌹 INI BOTS 🌹
 
-Me
-Mymid
-Mystickers
-Updatename 「text」
-Upstatus「text」
-Update pict
-Myname
-Mypicture
-Mybio
-Myvideo
-Mycover
-Myprofile
-Mid「@」
-Contact「@」
-Name「@」
-Bio「@」
-Pict「@」
-Video「@」
-Cover「@」
-Getid「@」
-Getid「Pm」
+🌺 Me
+🌺 Mymid
+🌺 Mystickers
+🌺 Updatename 「text」
+🌺 Upstatus「text」
+🌺 Update pict
+🌺 Myname
+🌺 Mypicture
+🌺 Mybio
+🌺 Myvideo
+🌺 Mycover
+🌺 Myprofile
+🌺 Mid「@」
+🌺 Contact「@」
+🌺 Name「@」
+🌺 Bio「@」
+🌺 Pict「@」
+🌺 Video「@」
+🌺 Cover「@」
+🌺 Getid「@」
+🌺 Getid「Pm」
 
-Media Command :
+🍄 Media Command 🍄:
 
-Line「idline」
-Calc「num」
-Wikipedia「query」
-1cak
-Motivation
-Image「query」
-Devianart「query」
-Asking「query」
-Searchporn「query」
-Anime「query」
-Searchmanga「query」
-Searchanime「query」
-Searchcharacter「query」
-Gif「query」
-Topnews
-Music
-Biography
-Memecode
-Creepypasta
-Svideo「query」
-Quote
-Infomovie「text」
-Fs「text」
-Imagetext「text」
-Groupbcast「text」
-Friendbcast「text」
-Fdcastvoice「text」
-Gcastvoice「text」
-Guess
-Raffle
-Flipacoin
-Bitcoin
-Zodiacind「zodiac」
-Urban「query」
-Zodiac「zodiac」
-Zodiaceng「zodiac」
-Instagram「username」
-Motivate
-Fight
-Cinema
-Nekopoi
-Suggestion「name」
-Prankcall「num」
-Prankmsg 「num」
-Whois「name」
-Status「name」
-Timezone「locate」
+🌹 Line「idline」
+🌹 Calc「num」
+🌹 Wikipedia「query」
+🌹 1cak
+🌹 Motivation
+🌹 Image「query」
+🌹 Devianart「query」
+🌹 Asking「query」
+🌹 Searchporn「query」
+🌹 Anime「query」
+🌹 Searchmanga「query」
+🌹 Searchanime「query」
+🌹 Searchcharacter「query」
+🌹 Gif「query」
+🌹 Topnews
+🌹 Music
+🌹 Biography
+🌹 Memecode
+🌹 Creepypasta
+🌹 Svideo「query」
+🌹 Quote
+🌹 Infomovie「text」
+🌹 Fs「text」
+🌹 Imagetext「text」
+🌹 Groupbcast「text」
+🌹 Friendbcast「text」
+🌹 Fdcastvoice「text」
+🌹 Gcastvoice「text」
+🌹 Guess
+🌹 Raffle
+🌹 Flipacoin
+🌹 Bitcoin
+🌹 Zodiacind「zodiac」
+🌹 Urban「query」
+🌹 Zodiac「zodiac」
+🌹 Zodiaceng「zodiac」
+🌹 Instagram「username」
+🌹 Motivate
+🌹 Fight
+🌹 Cinema
+🌹 Nekopoi
+🌹 Suggestion「name」
+🌹 Prankcall「num」
+🌹 Prankmsg 「num」
+🌹 Whois「name」
+🌹 Status「name」
+🌹 Timezone「locate」
 
-Group Command :
+🍀 Group Command 🍀:
 
-Ats
-Ticket
-Newticket
-Makers
-About
-Wordban「text」
-Delwordban「text」
-Wordbanlist
-Addfriend「@」
-Unfriend「@」
-Unfriendall
-Unsend「num」
-Getannounce
-Announallgroup「text」
-Announcelink「text|link」
-Gcastannoun「text|link」
-Announcetext「text」
-Announcecrash「text」
-Announcecam「text」
-Announclear
-Gpict
-Clearallinvites
-Square
-Update gpict
-Group pending
-Groups
-Ginfo
-Friendlist
-Favoritelist
-Block:add「@」
-Blockmid「mid」
-Unblock「mid」
-Blocklist
-Square
-Time
-Ban:add「@」
-Ban:del「@」
-Clearban
-Banlist
-Ourl
-Curl
-Spam on|num|text
-Gn「text」
-Recall「num」
-Stag「num @」
-Gift「num @」
-Blank「num @」
-Kick「@」
-Ulti「@」
-Slain「@」
-Reinv「@」
-Invite「@」
-Mimic:add「@」
-Mimic:del「@」
-Mimiclist
-Lurking on
-Lurking off
-Luking reset
-Lurking result
-Setread1「text」
-Setread2「text」
-Reader on/off
+🍄 Ats
+🍄 Ticket
+🍄 Newticket
+🍄 Makers
+🍄 About
+🍄 Wordban「text」
+🍄 Delwordban「text」
+🍄 Wordbanlist
+🍄 Addfriend「@」
+🍄 Unfriend「@」
+🍄 Unfriendall
+🍄 Unsend「num」
+🍄 Getannounce
+🍄 Announallgroup「text」
+🍄 Announcelink「text|link」
+🍄 Gcastannoun「text|link」
+🍄 Announcetext「text」
+🍄 Announcecrash「text」
+🍄 Announcecam「text」
+🍄 Announclear
+🍄 Gpict
+🍄 Clearallinvites
+🍄 Square
+🍄 Update gpict
+🍄 Group pending
+🍄 Groups
+🍄 Ginfo
+🍄 Friendlist
+🍄 Favoritelist
+🍄 Block:add「@」
+🍄 Blockmid「mid」
+🍄 Unblock「mid」
+🍄 Blocklist
+🍄 Square
+🍄 Time
+🍄 Ban:add「@」
+🍄 Ban:del「@」
+🍄 Clearban
+🍄 Banlist
+🍄 Ourl
+🍄 Curl
+🍄 Spam on|num|text
+🍄 Gn「text」
+🍄 Recall「num」
+🍄 Stag「num @」
+🍄 Gift「num @」
+🍄 Blank「num @」
+🍄 Kick「@」
+🍄 Ulti「@」
+🍄 Slain「@」
+🍄 Reinv「@」
+🍄 Invite「@」
+🍄 Mimic:add「@」
+🍄 Mimic:del「@」
+🍄 Mimiclist
+🍄 Lurking on
+🍄 Lurking off
+🍄 Luking reset
+🍄 Lurking result
+🍄 Setread1「text」
+🍄 Setread2「text」
+🍄 Reader on/off
 
-Settings Command :
+🍁 Settings Command 🍁:
 
-Status
-Detailuser on/off
-Autojoinqr on/off
-Autojoin on/off
-Autoblock on/off
-Autoadd on/off
-Autoleave on/off
-Autoread on/off
-Resendchat on/off
-Autorespon on/off
-Responchat on/off
-Welcomeimg on/off
-Welcomemsg on/off
-Leavemsg on/off
-Sleepmode on/off
-Notag on/off
-Antisticker on/off
-Getreader on/off
+🍀 Status
+🍀 Detailuser on/off
+🍀 Autojoinqr on/off
+🍀 Autojoin on/off
+🍀 Autoblock on/off
+🍀 Autoadd on/off
+🍀 Autoleave on/off
+🍀 Autoread on/off
+🍀 Resendchat on/off
+🍀 Autorespon on/off
+🍀 Responchat on/off
+🍀 Welcomeimg on/off
+🍀 Welcomemsg on/off
+🍀 Leavemsg on/off
+🍀 Sleepmode on/off
+🍀 Notag on/off
+🍀 Antisticker on/off
+🍀 Getreader on/off
 
-Message set command :
+🌺 Message set command 🌺:
 
-Addgetreadersticker
-Delgetreadersticker
-Setgetreader:
-Autorespon
-Addautoresponsticker
-Delautoresponsticker
-Setautorespon:「text」
-Setresponchat:「text」
-Autoadd
-Addautoaddsticker
-Delautoaddsticker
-Setautoadd:「text」
-Sleepmode
-Addsleepmodesticker
-Delsleepmodesticker
-Setsleepmode:「text」
-Leavemessage
-Addleavesticker
-delleavesticker
-Setleavemsg:「text」
-Welcomemessage
-Addwelcomesticker
-Delwelcomesticker
-Setwelcomemsg:「text」
+🍁 Addgetreadersticker
+🍁 Delgetreadersticker
+🍁 Setgetreader:
+🍁 Autorespon
+🍁 Addautoresponsticker
+🍁 Delautoresponsticker
+🍁 Setautorespon:「text」
+🍁 Setresponchat:「text」
+🍁 Autoadd
+🍁 Addautoaddsticker
+🍁 Delautoaddsticker
+🍁 Setautoadd:「text」
+🍁 Sleepmode
+🍁 Addsleepmodesticker
+🍁 Delsleepmodesticker
+🍁 Setsleepmode:「text」
+🍁 Leavemessage
+🍁 Addleavesticker
+🍁 delleavesticker
+🍁 Setleavemsg:「text」
+🍁 Welcomemessage
+🍁 Addwelcomesticker
+🍁 Delwelcomesticker
+🍁 Setwelcomemsg:「text」
 
 HAPPY GOOD DAY CAPUCCINO \m/"""
 helpmusic ="""「 Music 」
