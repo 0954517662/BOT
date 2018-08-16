@@ -11,21 +11,21 @@ from googletrans import Translator
 from humanfriendly import format_timespan, format_size, format_number, format_length
 import time, random, sys, json, codecs, threading, glob, re, string, os, requests, six, ast, pytz, urllib, urllib3, urllib.parse, traceback, atexit, subprocess
 
-cl = LINE()
+cl = LINE("EvwoU8lJLpcqc9doffSb.Sp/s6yipA4kI8lGDz1Jc/W.79Y+fOFYe6p2pcHSvF9zN4TtSO+cUQQlka5tqF8U4sI=")
 #cl = LINE("Ev49wbWDciJuzQi8UG6e.mDIRQD+WthuKlYOGL7ITRG.pAFPZhYHHPSFjqOGUkKn9dqHCER/ZNDUDgOBpLrWJe4=")   #PH-13
 
 ririnMid = cl.profile.mid
 ririnProfile = cl.getProfile()
 ririnSettings = cl.getSettings()
 ririnPoll = OEPoll(cl)
-call = LineCall(cl)
+#call = LineCall(cl)
 creator = ["u31d8aba9dff04c75242f2a2097b8adae"]
 owner = ["ub0ff92e9820f6b82a2f0b81d6758c2fb"]
 admin = ["ub0ff92e9820f6b82a2f0b81d6758c2fb"]
 staff = ["ub0ff92e9820f6b82a2f0b81d6758c2fb"]
 KAC = [cl]
 #ABC = [ki,kk,kc,km,kb]
-Bots = [mid]
+#Bots = [mid]
 Saints = admin + staff
 botStart = time.time()
 
@@ -312,10 +312,10 @@ try:
 except:
     print("Couldn't read Log data")
     
-wait["myProfile"]["displayName"] = clProfile.displayName
-wait["myProfile"]["statusMessage"] = clProfile.statusMessage
-wait["myProfile"]["pictureStatus"] = clProfile.pictureStatus
-coverId = ririn.getProfileDetail()["result"]["objectId"]
+wait["myProfile"]["displayName"] = ririnProfile.displayName
+wait["myProfile"]["statusMessage"] = ririnProfile.statusMessage
+wait["myProfile"]["pictureStatus"] = ririnProfile.pictureStatus
+coverId = cl.getProfileDetail()["result"]["objectId"]
 wait["myProfile"]["coverId"] = coverId
 
 def restartBot():
@@ -324,7 +324,7 @@ def restartBot():
     os.execl(python, python, *sys.argv)
     
 def logError(text):
-    ririn.log("[ ERROR ] {}".format(str(text)))
+    cl.log("[ ERROR ] {}".format(str(text)))
     tz = pytz.timezone("Asia/Jakarta")
     timeNow = datetime.now(tz=tz)
     timeHours = datetime.strftime(timeNow,"(%H:%M)")
@@ -902,28 +902,6 @@ def bot(op):
                     pass
                 ginfo = cl.getGroup(op.param1)
                 leaveMembers(op.param1, [op.param2])
-if op.type == 17:
-            if op.param1 in protectjoin:
-                if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                    wait["blacklist"][op.param2] = True
-                    try:
-                        if op.param3 not in wait["blacklist"]:
-                        	random.choice(ABC).cancelGroupInvitation(op.param1,[op.param2])
-                    except:
-                        try:
-                            if op.param3 not in wait["blacklist"]:
-                                random.choice(ABC).cancelGroupInvitation(op.param1,[op.param2])
-                        except:
-                            try:
-                                if op.param3 not in wait["blacklist"]:
-                                    random.choice(ABC).cancelGroupInvitation(op.param1,[op.param2])
-                            except:
-                                try:
-                                    if op.param3 not in wait["blacklist"]:
-                                        random.choice(ABC).cancelGroupInvitation(op.param1,[op.param2])
-                                except:
-                                    pass
-                return
 
         if op.type == 0:
             return
@@ -1435,7 +1413,7 @@ if op.type == 17:
                            cl.sendMessage(msg.to, "Jangan tag saya ogeb")
                            cl.kickoutFromGroup(msg.to, [msg._from])
                            break
-                if op.type == 25 or op.type == 26:
+        if op.type == 25 or op.type == 26:
             msg = op.message
             text = msg.text
             msg_id = msg.id
@@ -1593,7 +1571,7 @@ if op.type == 17:
                                   wait["invite"] = False
                                   break
                                     
-                                    if msg.contentType == 13:
+               if msg.contentType == 13:
                  if msg._from in admin:
                   if wait["addbots"] == True:
                     if msg.contentMetadata["mid"] in Bots:
@@ -1826,7 +1804,7 @@ if op.type == 17:
                                 wait["selfbot"] = False
                                 cl.sendText(msg.to, "Selfbot dinonaktifkan")
                                 
-                                elif cmd == "คำสั่ง":
+                        elif cmd == "คำสั่ง":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 helpMessage = help()
@@ -1986,7 +1964,7 @@ if op.type == 17:
                             except Exception as e:
                                 cl.sendMessage(msg.to, str(e))
                                 
-                                elif cmd == "me" or text.lower() == 'me':
+                        elif cmd == "me" or text.lower() == 'me':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                sendMention(msg.to, sender, "「 User Selfbot 」\n", "")
@@ -2208,7 +2186,7 @@ if op.type == 17:
                                 text = xpesan + zxc + ret_ + ""
                                 cl.sendMessage(to, text, contentMetadata={'MENTION':str('{"MENTIONEES":'+json.dumps(zx2).replace(' ','')+'}')}, contentType=0)
                                 
-                                elif cmd == "ginfo":
+                        elif cmd == "ginfo":
                           if msg._from in admin:
                             try:
                                 G = cl.getGroup(msg.to)
@@ -2395,7 +2373,7 @@ if op.type == 17:
                             except Exception as e:
                                 cl.sendMessage(to, str(e))
                                 
-                                elif cmd.startswith("leaveall "):
+                        elif cmd.startswith("leaveall "):
                           if msg._from in admin:
                             separate = msg.text.split(" ")
                             number = msg.text.replace(separate[0] + " ","")
@@ -2602,7 +2580,7 @@ if op.type == 17:
                             except:
                                 pass
                             
-                            elif cmd.startswith("infomem "):
+                        elif cmd.startswith("infomem "):
                           if msg._from in admin:
                             separate = msg.text.split(" ")
                             number = msg.text.replace(separate[0] + " ","")
@@ -2767,14 +2745,6 @@ if op.type == 17:
                                    cl.sendMessage(msg.to, "Grup "+str(x.name)+ "\nUrl grup : http://line.me/R/ti/g/"+gurl)
 
 #===========BOT UPDATE============#
-
-elif cmd == "updategrup":
-                          if wait["selfbot"] == True:
-                            if msg._from in admin:
-                              if msg.toType == 2:
-                                settings["groupPicture"] = True
-                                cl.sendText(msg.to,"Kirim fotonya.....")
-
                         elif cmd == "updatebot":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
@@ -3555,7 +3525,7 @@ elif cmd == "updategrup":
                                 except Exception as e:
                                     cl.sendText(msg.to," "+str(e))
                                     
-                                    elif cmd.startswith("get-sholat "):
+                        elif cmd.startswith("get-sholat "):
                           if msg._from in admin:
                              sep = text.split(" ")
                              location = text.replace(sep[0] + " ","")
@@ -3703,7 +3673,7 @@ elif cmd == "updategrup":
                                                          cl.sendMessage(to, str(ret_))
                                                          cl.sendAudioWithURL(to, str(data["result"]["mp3"][0]))
                                                             
-                                                            elif cmd.startswith("kode wilayah"):
+                        elif cmd.startswith("kode wilayah"):
                           if msg._from in admin:
                             ret_ = "「 Daftar Kode Wilayah 」\n\n"
                             ret_ += "248 = Alternatif - Cibubur\n119 = Ancol - bandara\n238 = Asia afrika - Bandung\n169 = Asia afrika - Hang lekir"
@@ -3934,7 +3904,7 @@ elif cmd == "updategrup":
                                         hasil += "\n" + str(no) + ". Judul : " + str(news["title"]) + "\n • Deskripsi : " + str(news["detail"]) + "\n• Link: " + str(news["link"]) + "\n"
                                         hasil += "\n"
                                    cl.sendText(msg.to, str(hasil))
-                                elif cmd.startswith("get-video "):
+                        elif cmd.startswith("get-video "):
                           if msg._from in admin:
                                 sep = msg.text.split(" ")
                                 search = msg.text.replace(sep[0] + " ","")
@@ -4706,7 +4676,7 @@ elif cmd == "updategrup":
                                     ma = cl.getContact(i)
                                     cl.sendMessage(msg.to, None, contentMetadata={'mid': i}, contentType=13)
                                     
-                                    elif cmd == "contact staff" or text.lower() == 'contact staff':
+                        elif cmd == "contact staff" or text.lower() == 'contact staff':
                             if msg._from in admin:
                                 ma = ""
                                 for i in staff:
@@ -5074,7 +5044,7 @@ elif cmd == "updategrup":
                         elif text.lower() == "cek sider":
                             if msg._from in admin:
                                cl.sendMessage(msg.to, "「 Status Sider 」\nSider Msg mu :\n\n" + str(wait["mention"]))
-                            except Exception as error:
+    except Exception as error:
         logError(error)
         traceback.print_tb(error.__traceback__)
 
