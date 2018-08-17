@@ -34,9 +34,9 @@ clientSettings = client.getSettings()
 #==============================================================================================================
 clientPoll = OEPoll(client)
 #==============================================================================================================
-admin = "ub0ff92e9820f6b82a2f0b81d6758c2fb"
-owner = "ub0ff92e9820f6b82a2f0b81d6758c2fb"
-Bots = [mid,"ub0ff92e9820f6b82a2f0b81d6758c2fb"]
+admin = "u4862fe4b182b2fd194a3108e2f3662e8"
+owner = "u4862fe4b182b2fd194a3108e2f3662e8"
+Bots = [mid,"u4862fe4b182b2fd194a3108e2f3662e8"]
 #==============================================================================================================
 #==============================================================================================================
 contact = client.getProfile()
@@ -83,7 +83,7 @@ settings = json.load(settingsOpen)
 #images = json.load(imagesOpen)
 stickers = json.load(stickersOpen)
 msg_dict = {}
-bl = ["u31d8aba9dff04c75242f2a2097b8adae"]
+bl = ["u4862fe4b182b2fd194a3108e2f3662e8"]
 
 try:
     with open("Log_data.json","r",encoding="utf_8_sig") as f:
@@ -396,7 +396,7 @@ helpmsg ="""🌹 INI BOTS 🌹
 🍁 Delwelcomesticker
 🍁 Setwelcomemsg:「text」
 
-HAPPY GOOD DAY CAPUCCINO \m/"""
+BY:【さัএπัஞ✵ບิथℓℓҨतΩ】"""
 helpmusic ="""「 Music 」
 
 • Key:  Music「query」
@@ -2124,7 +2124,7 @@ def lineBot(op):
                             settings["restartPoint"] = to
                             restartBot()
                         elif cmd == "me" or cmd == "tes":
-                            client.sendMentionFooter(to, '「Me」\n', sender, "https://line.me/ti/p/~yukie2k18", "http://dl.profile.line-cdn.net/"+client.getContact(sender).pictureStatus, client.getContact(sender).displayName);client.sendMessage(to, client.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+client.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~yukie2k18', 'type': 'mt', 'subText': "Khie Bot", 'a-installUrl': 'https://line.me/ti/p/~yukie2k18', 'a-installUrl': ' https://line.me/ti/p/~yukie2k18', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~yukie2k18', 'i-linkUri': 'https://line.me/ti/p/~yukie2k18', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~yukie2k18'}, contentType=19)
+                            client.sendMentionFooter(to, '「Me」\n', sender, "https://line.me/ti/p/~max_pv", "http://dl.profile.line-cdn.net/"+client.getContact(sender).pictureStatus, client.getContact(sender).displayName);client.sendMessage(to, client.getContact(sender).displayName, contentMetadata = {'previewUrl': 'http://dl.profile.line-cdn.net/'+client.getContact(sender).pictureStatus, 'i-installUrl': 'https://line.me/ti/p/~max_pv', 'type': 'mt', 'subText': "Khie Bot", 'a-installUrl': 'https://line.me/ti/p/~max_pv', 'a-installUrl': ' https://line.me/ti/p/~max_pv', 'a-packageName': 'com.spotify.music', 'countryCode': 'ID', 'a-linkUri': 'https://line.me/ti/p/~max_pv', 'i-linkUri': 'https://line.me/ti/p/~max_pv', 'id': 'mt000000000a6b79f9', 'text': 'Khie', 'linkUri': 'https://line.me/ti/p/~max_pv'}, contentType=19)
                         elif cmd == "yabi":
                             userid = "https://line.me/ti/p/~" + client.profile.userid
                             client.sendImageWithFooter(to, "http://dl.profile.line-cdn.net/"+client.getContact(sender).pictureStatus, str(userid), "http://dl.profile.line-cdn.net/"+client.getContact(sender).pictureStatus, client.getContact(sender).displayName)
@@ -5253,7 +5253,7 @@ def cium(to, nama):
     strt = int(0)
     akh = int(0)
     nm = nama
-    myid = "uaca55463c423c3632012598148691da7"
+    myid = "u4862fe4b182b2fd194a3108e2f3662e8"
     if myid in nm:    
       nm.remove(myid)
     #print nm
